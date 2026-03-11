@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAPTCHA'26 — Decode. Develop. Dominate.</title>
+  <meta name="description"
+    content="CAPTCHA'26 is the flagship CSE symposium at Manakula Vinayagar Institute of Technology on 14 March 2026. Join the coding battle arena." />
+  <meta name="keywords" content="CAPTCHA 2026, MVIT, CSE symposium, hackathon, coding competition, tech fest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════ NAVIGATION ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        CAPTCHA<span class="logo-year">'26</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#technical" class="nav-link">Technical</a></li>
+        <li><a href="#fun" class="nav-link">Fun Events</a></li>
+        <li><a href="#schedule" class="nav-link">Schedule</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="https://forms.google.com" target="_blank" class="nav-cta">Register</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════ HERO ═══════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-institution">
+        <img src="mvit.png" alt="MVIT Logo" class="college-logo" onerror="this.style.display='none'" />
+        <h2 class="college-name">Manakula Vinayagar Institute of Technology</h2>
+        <h3 class="mitilence-text">MITILENCE 2026</h3>
+        <h4 class="dept-text">Dept of CSE presents</h4>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-bracket">&lt;</span>CAPTCHA<span class="title-year">'26</span><span
+          class="title-bracket">/&gt;</span>
+      </h1>
+      <p class="hero-tagline">Decode. Develop. Dominate.</p>
+      <div class="countdown-wrapper">
+        <div class="countdown-label">Battle Commences In</div>
+        <div class="countdown" id="countdown">
+          <div class="countdown-unit">
+            <span class="count-num" id="days">00</span>
+            <span class="count-label">Days</span>
+          </div>
+          <div class="countdown-colon">:</div>
+          <div class="countdown-unit">
+            <span class="count-num" id="hours">00</span>
+            <span class="count-label">Hours</span>
+          </div>
+          <div class="countdown-colon">:</div>
+          <div class="countdown-unit">
+            <span class="count-num" id="minutes">00</span>
+            <span class="count-label">Mins</span>
+          </div>
+          <div class="countdown-colon">:</div>
+          <div class="countdown-unit">
+            <span class="count-num" id="seconds">00</span>
+            <span class="count-label">Secs</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="https://forms.google.com" target="_blank" class="btn btn-primary btn-glow">
+          <span class="btn-icon">⚔️</span> Register Now
+        </a>
+        <a href="#about" class="btn btn-outline">Explore the Arena</a>
+      </div>
+    </div>
+    <!-- Floating code elements -->
+    <div class="floating-code" style="top:15%;left:5%;animation-delay:0s">{&nbsp;}</div>
+    <div class="floating-code" style="top:25%;right:8%;animation-delay:1.5s">&lt;/&gt;</div>
+    <div class="floating-code" style="top:60%;left:3%;animation-delay:3s">0101</div>
+    <div class="floating-code" style="top:70%;right:5%;animation-delay:0.8s">#AI</div>
+    <div class="floating-code" style="top:40%;left:12%;animation-delay:2s">while(true)</div>
+    <div class="floating-code" style="top:80%;left:20%;animation-delay:4s">function()</div>
+    <div class="floating-code" style="top:35%;right:15%;animation-delay:2.5s">&#123;&#125;</div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ ABOUT ═══════════════════════════════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-rune">✦</div>
+        <h2 class="section-title">The Chronicles</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-scroll-card">
+        <div class="scroll-ornament scroll-ornament-top">
+          <div class="ornament-line"></div>
+          <div class="ornament-gem">◆</div>
+          <div class="ornament-line"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-icon">🏰</div>
+          <div class="about-text-block">
+            <h3 class="about-subtitle">What is CAPTCHA'26?</h3>
+            <p class="about-description">
+              CAPTCHA'26 is the flagship symposium of the CSE department bringing together developers, innovators, and
+              problem solvers to compete in technical challenges and explore emerging technologies.
+            </p>
+            <p class="about-description">
+              Step into the arena where code is your sword, logic is your shield, and innovation crowns the champion.
+              Forge alliances, defeat challenges, and claim glory in the greatest tech battle of the year.
+            </p>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Events</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-num">1 Day</span>
+            <span class="stat-label">Battle</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Glory</span>
+          </div>
+        </div>
+        <div class="scroll-ornament scroll-ornament-bottom">
+          <div class="ornament-line"></div>
+          <div class="ornament-gem">◆</div>
+          <div class="ornament-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ TECHNICAL EVENTS ═══════════════════════════════════════════ -->
+  <section class="section events-section" id="technical">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-rune">⚔</div>
+        <h2 class="section-title">Technical Trials</h2>
+        <p class="section-subtitle">Prove your mastery across the digital battlefield</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="events-carousel">
+        <button class="carousel-arrow carousel-prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </button>
+        <div class="events-grid">
+          <div class="event-card tech-card" data-glow="green">
+            <div class="card-glow-border"></div>
+            <div class="card-inner">
+              <div class="card-image"><img src="images/tech_quiz.png" alt="Tech Quiz" /></div>
+              <div class="card-banner">Technical</div>
+              <h3 class="card-title">Eloquence-Paper Presentation</h3>
+              <p class="card-desc">Wield the power of words. Present your innovative research and inspire the council
+                with your eloquence.</p>
+              <div class="card-meta">
+                <span class="meta-item"><span class="meta-icon">🕐</span> 10:30 AM</span>
+                <span class="meta-item"><span class="meta-icon">📍</span> CSE Lab-301</span>
+                <span class="meta-item"><span class="meta-icon">👤</span> Mrs.J.Jayapradha</span>
+                <span class="meta-item"><span class="meta-icon">👥</span> Kishore, Santhana Priyan, Mithun</span>
+                <span class="meta-item"><span class="meta-icon">📱</span> +91-82487 85717</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-tag">Team of 2</span>
+                <span class="card-prize">🏆 Prize Awaits</span>
+              </div>
+            </div>
+          </div>
+          <div class="event-card tech-card" data-glow="blue">
+            <div class="card-glow-border"></div>
+            <div class="card-inner">
+              <div class="card-image"><img src="images/code_war.png" alt="Code War" /></div>
+              <div class="card-banner">Technical</div>
+              <h3 class="card-title">Debug Thugs-Coding</h3>
+              <p class="card-desc">Clash of algorithms. Battle through competitive programming challenges and prove your
+                coding dominance.</p>
+              <div class="card-meta">
+                <span class="meta-item"><span class="meta-icon">🕐</span> 10:30 AM</span>
+                <span class="meta-item"><span class="meta-icon">📍</span> CSE Lab-301</span>
+                <span class="meta-item"><span class="meta-icon">👤</span> Mr. S. Balaji</span>
+                <span class="meta-item"><span class="meta-icon">👥</span> Subasri, Shabari, Saravana</span>
+                <span class="meta-item"><span class="meta-icon">📱</span> +91-99945 94293</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-tag">Solo/Duo</span>
+                <span class="card-prize">🏆 Prize Awaits</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card tech-card" data-glow="purple">
+            <div class="card-glow-border"></div>
+            <div class="card-inner">
+              <div class="card-image"><img src="images/ai_hackathon.png" alt="AI Hackathon" /></div>
+              <div class="card-banner">Technical</div>
+              <h3 class="card-title">Techno Bot - Chat bot Creation</h3>
+              <p class="card-desc">Forge intelligent conversational allies. Build AI-powered chatbots that push the
+                boundaries of innovation.</p>
+              <div class="card-meta">
+                <span class="meta-item"><span class="meta-icon">🕐</span> 11:30 AM</span>
+                <span class="meta-item"><span class="meta-icon">📍</span> CSE LAB-301</span>
+                <span class="meta-item"><span class="meta-icon">👤</span> Mrs. R. Indumathi</span>
+                <span class="meta-item"><span class="meta-icon">👥</span> Harini, Keerthana, Nivetha</span>
+                <span class="meta-item"><span class="meta-icon">📱</span> +91-99407 96144</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-tag">Team of 3</span>
+                <span class="card-prize">🏆 Prize Awaits</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card tech-card" data-glow="red">
+            <div class="card-glow-border"></div>
+            <div class="card-inner">
+              <div class="card-image"><img src="images/debug_battle.png" alt="Debug Battle" /></div>
+              <div class="card-banner">Technical</div>
+              <h3 class="card-title">Mind Crash - Puzzle Solver</h3>
+              <p class="card-desc">Test your logical thinking and problem-solving skills. Crack complex puzzles and
+                unravel mysteries to emerge victorious.</p>
+              <div class="card-meta">
+                <span class="meta-item"><span class="meta-icon">🕐</span> 2:00 PM</span>
+                <span class="meta-item"><span class="meta-icon">📍</span> CSE LAB-301</span>
+                <span class="meta-item"><span class="meta-icon">👤</span> Mrs. S. Boovaneswari</span>
+                <span class="meta-item"><span class="meta-icon">👥</span> Gowtham, Sarathi, Balaji,Lavanya, Sabari,
+                </span>
+                <span class="meta-item"><span class="meta-icon">📱</span> +91-94881 59651</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-tag">Solo</span>
+                <span class="card-prize">🏆 Prize Awaits</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card tech-card" data-glow="gold">
+            <div class="card-glow-border"></div>
+            <div class="card-inner">
+              <div class="card-image"><img src="images/web_design_arena.png" alt="Web Design Arena" /></div>
+              <div class="card-banner">Technical</div>
+              <h3 class="card-title">Animate the Future</h3>
+              <p class="card-desc">Bring your digital visions to life through motion. Create captivating animations that
+                tell epic stories.</p>
+              <div class="card-meta">
+                <span class="meta-item"><span class="meta-icon">🕐</span> 2:00 PM</span>
+                <span class="meta-item"><span class="meta-icon">📍</span> CSE LAB-301</span>
+                <span class="meta-item"><span class="meta-icon">👤</span> Mrs. G. Sharmila</span>
+                <span class="meta-item"><span class="meta-icon">👥</span> Dharshini, Sanjay, Rahul</span>
+                <span class="meta-item"><span class="meta-icon">📱</span> 88384 07339</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-tag">Solo/Duo</span>
+                <span class="card-prize">🏆 Prize Awaits</span>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <button class="carousel-arrow carousel-next" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ FUN EVENTS ═══════════════════════════════════════════ -->
+  <section class="section events-section fun-events-section" id="fun">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-rune">🎭</div>
+        <h2 class="section-title">The Grand Carnival</h2>
+        <p class="section-subtitle">Where fun meets fierce competition in the festival grounds</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="events-carousel">
+        <button class="carousel-arrow carousel-prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </button>
+        <div class="events-grid">
+
+          <div class="event-card fun-card" data-glow="pink">
+            <div class="card-glow-border"></div>
+            <div class="card-inner">
+              <div class="card-image"><img src="images/meme_war.png" alt="Meme War" /></div>
+              <div class="card-banner fun-banner">Fun</div>
+              <h3 class="card-title">Meme Creation</h3>
+              <p class="card-desc">Wield the power of humor. Craft the most legendary, laugh-inducing tech memes in the
+                realm.</p>
+              <div class="card-meta">
+                <span class="meta-item"><span class="meta-icon">🕐</span> 11:00 AM</span>
+                <span class="meta-item"><span class="meta-icon">📍</span> Hall 303</span>
+                <span class="meta-item"><span class="meta-icon">👤</span> Mrs. Nandhini</span>
+                <span class="meta-item"><span class="meta-icon">👥</span> Sivaprakash, Thushanth, Ramya</span>
+                <span class="meta-item"><span class="meta-icon">📱</span> 73396 03873</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-tag">Solo</span>
+                <span class="card-prize">🎁 Gift Awaits</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card fun-card" data-glow="cyan">
+            <div class="card-glow-border"></div>
+            <div class="card-inner">
+              <div class="card-image"><img src="images/gaming_arena.png" alt="Gaming Arena" /></div>
+              <div class="card-banner fun-banner">Fun</div>
+              <h3 class="card-title">Cini Blast</h3>
+              <p class="card-desc">A battle of cinematic knowledge. Guess the movie, dialogue, or song to claim the
+                title of the ultimate cinephile.</p>
+              <div class="card-meta">
+                <span class="meta-item"><span class="meta-icon">🕐</span> 11:00 AM</span>
+                <span class="meta-item"><span class="meta-icon">📍</span> Hall 305</span>
+                <span class="meta-item"><span class="meta-icon">👤</span> Mrs. M. Subhasree</span>
+                <span class="meta-item"><span class="meta-icon">👥</span> Sudharsan, Ajay, Akash</span>
+                <span class="meta-item"><span class="meta-icon">📱</span> 95850 99340</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-tag">Solo/Team</span>
+                <span class="card-prize">🎁 Gift Awaits</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card fun-card" data-glow="orange">
+            <div class="card-glow-border"></div>
+            <div class="card-inner">
+              <div class="card-image"><img src="images/treasure_hunt.png" alt="Tech Treasure Hunt" /></div>
+              <div class="card-banner fun-banner">Fun</div>
+              <h3 class="card-title">Logo Finder</h3>
+              <p class="card-desc">Test your brand knowledge and visual memory. Decode and identify the obscured logos
+                of tech giants.</p>
+              <div class="card-meta">
+                <span class="meta-item"><span class="meta-icon">🕐</span> 11:00 PM</span>
+                <span class="meta-item"><span class="meta-icon">📍</span> Hall 302</span>
+                <span class="meta-item"><span class="meta-icon">👤</span> Mrs. D. Devaki</span>
+                <span class="meta-item"><span class="meta-icon">👥</span> Swetha, Pavithra, Prasanth</span>
+                <span class="meta-item"><span class="meta-icon">📱</span> 99436 97906</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-tag">Team of 3</span>
+                <span class="card-prize">🎁 Gift Awaits</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card fun-card" data-glow="yellow">
+            <div class="card-glow-border"></div>
+            <div class="card-inner">
+              <div class="card-image"><img src="images/rapid_fire_quiz.png" alt="Rapid Fire Quiz" /></div>
+              <div class="card-banner fun-banner">Fun</div>
+              <h3 class="card-title">Hear me out</h3>
+              <p class="card-desc">Trust your senses in this auditory challenge. Listen closely to the audio clips and
+                guess the hidden answers.</p>
+              <div class="card-meta">
+                <span class="meta-item"><span class="meta-icon">🕐</span> 11:00 AM</span>
+                <span class="meta-item"><span class="meta-icon">📍</span> Hall 305</span>
+                <span class="meta-item"><span class="meta-icon">👤</span> Mrs. U. R. Padma</span>
+                <span class="meta-item"><span class="meta-icon">👥</span> Gokul, Hariharan, Jeevitha</span>
+                <span class="meta-item"><span class="meta-icon">📱</span> 90038 30666</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-tag">Solo</span>
+                <span class="card-prize">🎁 Gift Awaits</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card fun-card" data-glow="violet">
+            <div class="card-glow-border"></div>
+            <div class="card-inner">
+              <div class="card-image"><img src="images/reel_challenge.png" alt="Reel Challenge" /></div>
+              <div class="card-banner fun-banner">Fun</div>
+              <h3 class="card-title">Anime Quiz</h3>
+              <p class="card-desc">Enter the world of anime. Prove your otaku knowledge in this ultimate test of
+                legendary series and characters.</p>
+              <div class="card-meta">
+                <span class="meta-item"><span class="meta-icon">🕐</span> 11:00 PM</span>
+                <span class="meta-item"><span class="meta-icon">📍</span> Hall 313</span>
+                <span class="meta-item"><span class="meta-icon">👤</span> Dr.J.Vaishnavi</span>
+                <span class="meta-item"><span class="meta-icon">👥</span> N Kishore,A Kishore,Santhana Priyan ,
+                  Mithun</span>
+                <span class="meta-item"><span class="meta-icon">📱</span> 96264 33235</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-tag">Solo/Duo</span>
+                <span class="card-prize">🎁 Gift Awaits</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-arrow carousel-next" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ SCHEDULE ═══════════════════════════════════════════ -->
+  <section class="section schedule-section" id="schedule">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-rune">📜</div>
+        <h2 class="section-title">The Battle Scroll</h2>
+        <p class="section-subtitle">The ordained timeline of the realm — 14 March 2026</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-path"></div>
+        <div class="timeline-items">
+
+          <div class="timeline-item" data-time="9:00 AM">
+            <div class="timeline-checkpoint">
+              <div class="checkpoint-outer"></div>
+              <div class="checkpoint-inner">🔥</div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-time">9:00 AM</div>
+              <h4 class="timeline-event">Opening Ceremony</h4>
+              <p class="timeline-desc">The gates open. The battle begins. Welcome to the arena.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-time="10:00 AM">
+            <div class="timeline-checkpoint">
+              <div class="checkpoint-outer"></div>
+              <div class="checkpoint-inner">⚔️</div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-time">10:00 AM</div>
+              <h4 class="timeline-event">Technical Events</h4>
+              <p class="timeline-desc">Code War, AI Hackathon, Debug Battle, Web Design Arena & Tech Quiz begin.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-time="1:00 PM">
+            <div class="timeline-checkpoint">
+              <div class="checkpoint-outer"></div>
+              <div class="checkpoint-inner">🍽️</div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-time">1:00 PM</div>
+              <h4 class="timeline-event">The Great Feast</h4>
+              <p class="timeline-desc">Warriors rest and refuel. The banquet hall awaits.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-time="2:00 PM">
+            <div class="timeline-checkpoint">
+              <div class="checkpoint-outer"></div>
+              <div class="checkpoint-inner">🎭</div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-time">2:00 PM</div>
+              <h4 class="timeline-event">Fun Events</h4>
+              <p class="timeline-desc">Meme War, Gaming Arena, Treasure Hunt, Rapid Fire & Reel Challenge commence.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-time="4:30 PM">
+            <div class="timeline-checkpoint">
+              <div class="checkpoint-outer"></div>
+              <div class="checkpoint-inner">👑</div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-time">4:30 PM</div>
+              <h4 class="timeline-event">Valedictory</h4>
+              <p class="timeline-desc">Champions crowned. Prizes awarded. The legend is forged.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ REGISTRATION CTA ═══════════════════════════════════════════ -->
+  <section class="section cta-section" id="register">
+    <div class="cta-bg"></div>
+    <div class="container">
+      <div class="cta-content">
+        <div class="cta-emblem">👑</div>
+        <h2 class="cta-title">Claim Your Seat<br /><span class="cta-title-accent">in the Arena</span></h2>
+        <p class="cta-desc">
+          The gates of CAPTCHA'26 are open. Warriors from across all realms are summoned.
+          Register now before your seat is claimed by another.
+        </p>
+        <div class="cta-details">
+          <span class="cta-detail"><span>📅</span> 14 March 2026</span>
+          <span class="cta-detail"><span>🏛️</span> MVIT Campus</span>
+          <span class="cta-detail"><span>🎓</span> CSE Department</span>
+        </div>
+        <a href="https://forms.gle/tzNvEMkeDEfBgk8v8" target="_blank" class="btn btn-emerald btn-xl btn-glow">
+          <span>⚔️</span> Register for War
+        </a>
+        <p class="cta-note">Limited seats available. Registration closes 13 March 2026.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ CONTACT ═══════════════════════════════════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-rune">📡</div>
+        <h2 class="section-title">The Council</h2>
+        <p class="section-subtitle">Reach out to the guardians of the arena</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-card">
+          <div class="contact-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-icon">👤</div>
+          </div>
+          <div class="contact-info">
+            <span class="contact-role">CSE Association Co-ordinator</span>
+            <h4 class="contact-name">Mr.R.Sathish Kumar </h4>
+            <a href="tel:+91 86674 91392" class="contact-link">
+              <span class="contact-link-icon">📱</span> +91 86674 91392
+            </a>
+
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-icon">👤</div>
+          </div>
+          <div class="contact-info">
+            <span class="contact-role">Secretary</span>
+            <h4 class="contact-name">Balaji G</h4>
+            <a href="tel:+919876543211" class="contact-link">
+              <span class="contact-link-icon">📱</span> +91 7339366295
+            </a>
+
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-icon">👤</div>
+          </div>
+          <div class="contact-info">
+            <span class="contact-role">Joint Secretary</span>
+            <h4 class="contact-name">R Sugumar</h4>
+            <a href="tel:+919876543212" class="contact-link">
+              <span class="contact-link-icon">📱</span> +91 98765 43212
+            </a>
+
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-icon">👤</div>
+          </div>
+          <div class="contact-info">
+            <span class="contact-role">Core Team</span>
+            <h4 class="contact-name">Anto Sam Christ A</h4>
+            <span class="contact-role">Desgin Team</span>
+            <h4 class="contact-name">Guruprasad S</h4>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ FOOTER ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-bracket">&lt;</span>CAPTCHA<span class="logo-year">'26</span><span
+              class="logo-bracket">/&gt;</span>
+          </div>
+          <p class="footer-tagline">Decode. Develop. Dominate.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-info">
+          <div class="footer-info-block">
+            <h5 class="footer-info-title">Institution</h5>
+            <p>Manakula Vinayagar Institute of Technology</p>
+            <p>Department of Computer Science and Engineering</p>
+            <p>Puducherry, India</p>
+          </div>
+          <div class="footer-info-block">
+            <h5 class="footer-info-title">Quick Links</h5>
+            <a href="#about" class="footer-link">About</a>
+            <a href="#technical" class="footer-link">Technical Events</a>
+            <a href="#fun" class="footer-link">Fun Events</a>
+            <a href="#schedule" class="footer-link">Schedule</a>
+            <a href="#contact" class="footer-link">Contact</a>
+          </div>
+          <div class="footer-info-block">
+            <h5 class="footer-info-title">Event</h5>
+            <p>📅 14 March 2026</p>
+            <p>🏛️ MVIT Campus</p>
+            <p>🎓 CSE Department</p>
+            <a href="https://forms.gle/tzNvEMkeDEfBgk8v8" target="_blank" class="footer-register-btn">Register Now →</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-divider"></div>
+        <p class="footer-copy">© 2026 CAPTCHA'26 · Manakula Vinayagar Institute of Technology · All Rights Reserved</p>
+        <p class="footer-sub">Designed & Developed with ⚔️ by the CSE Department</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
