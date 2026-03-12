@@ -304,7 +304,7 @@ const raf = requestAnimationFrame;
       team: 'Solo/Duo',
       prize: '🏆 Prize Awaits',
       staff: 'Mr. S. Balaji',
-      students: 'Subasri, Shabari, Saravana',
+      students: 'Subasri N, Shabari, Saravana and Santhana Lakshmi',
       contact: '99945 94293',
       desc: 'Enter the ultimate algorithmic battlefield. Participants face a series of competitive programming problems of increasing difficulty. From brute force to dynamic programming — only the sharpest minds survive.',
       rules: [
@@ -323,7 +323,7 @@ const raf = requestAnimationFrame;
       team: 'Team of 3',
       prize: '🏆 Prize Awaits',
       staff: 'Mrs. R. Indumathi',
-      students: 'Harini, Keerthana, Nivetha',
+      students: 'Jenifer Salomi D, Bhuvanesh, Bharanidharan , Tharun, Praveen Kumar and Midhun Albert',
       contact: '99407 96144',
       desc: 'Build the future in a single day. Teams ideate, prototype, and present an AI-powered solution to a real-world problem revealed on the event day. Think fast, build smart.',
       rules: [
@@ -342,7 +342,7 @@ const raf = requestAnimationFrame;
       team: 'Solo',
       prize: '🏆 Prize Awaits',
       staff: 'Mrs. S. Boovaneswari',
-      students: 'Gowtham, Sarathi, Balaji,Lavanya, Sabari,',
+      students: 'Gowtham, Sarathi, Balaji,Lavanya, Sabari,Somnath and Tharani',
       contact: '94881 59651',
       desc: 'Bugs lurk in every corner of the code. Your mission: hunt them down, kill them all, and do it faster than everyone else. Pre-written buggy programs await — can you restore them to glory?',
       rules: [
@@ -361,7 +361,7 @@ const raf = requestAnimationFrame;
       team: 'Solo/Duo',
       prize: '🏆 Prize Awaits',
       staff: 'Mrs. G. Sharmila',
-      students: 'Dharshini, Sanjay, Rahul',
+      students: 'Sharanya, Nithyanandhan, Adithiya, Mohana krishnan , Avinash , Antro and Anandhanithiyan',
       contact: '88384 07339',
       desc: 'Craft a complete website from scratch. A design brief is provided on the spot. Your creation will be judged on creativity, responsiveness, code quality, and overall user experience.',
       rules: [
@@ -380,7 +380,7 @@ const raf = requestAnimationFrame;
       team: 'Team of 2',
       prize: '🏆 Prize Awaits',
       staff: 'Mrs.J.Jayapradha',
-      students: 'Kishore, Santhana Priyan, Mithun',
+      students: 'Supraja, Divya S,Bhala ganapathy, Bharath,Kajol, Shalini and shahina',
       contact: '82487 85717',
       desc: 'A multi-round quiz spanning Computer Science, current technology trends, logic puzzles, and rapid-fire rounds. Knowledge is your weapon — bring your sharpest mind.',
       rules: [
@@ -399,7 +399,7 @@ const raf = requestAnimationFrame;
       team: 'Solo',
       prize: '🎁 Gift Awaits',
       staff: 'Mrs. Nandhini',
-      students: 'Sivaprakash, Thushanth, Ramya',
+      students: 'Mohith hasan, Sivaprakash, Thushanth and Ramya',
       contact: '73396 03873',
       desc: 'The internet is your canvas — memes are your art. Create the funniest, most creative tech memes on a given prompt. The crowd decides who wins the Meme Throne.',
       rules: [
@@ -418,7 +418,7 @@ const raf = requestAnimationFrame;
       team: 'Solo/Team',
       prize: '🎁 Gift Awaits',
       staff: 'Mrs. M. Subhasree',
-      students: 'Sudharsan, Ajay, Akash',
+      students: 'Kavya B,Moyekuzali T, Dharani rajan N,Laxman T,Keerthana G,Harshawarthany and Kiruthiga V',
       contact: '95850 99340',
       desc: 'Enter the digital colosseum. Compete across multiple gaming titles in a bracket-style tournament. Victory demands reflexes, strategy, and nerves of steel.',
       rules: [
@@ -437,7 +437,7 @@ const raf = requestAnimationFrame;
       team: 'Team of 3',
       prize: '🎁 Gift Awaits',
       staff: 'Mrs. D. Devaki',
-      students: 'Swetha, Pavithra, Prasanth',
+      students: 'Om Prakash S, Harish T, Mughilan S',
       contact: '99436 97906',
       desc: 'Decode cryptic clues hidden across the campus. Each clue leads to the next — requiring logical thinking, technical knowledge, and teamwork. The first team to complete all checkpoints wins.',
       rules: [
@@ -456,7 +456,7 @@ const raf = requestAnimationFrame;
       team: 'Solo',
       prize: '🎁 Gift Awaits',
       staff: 'Mrs. U. R. Padma',
-      students: 'Gokul, Hariharan, Jeevitha',
+      students: 'Ruthran S,Thevipriya S,Veronika S',
       contact: '90038 30666',
       desc: 'Fast questions, faster answers. Think on your feet in this high-energy quiz with lightning-round format. Topics are light — tech trivia, pop culture, movies, and GK. Hesitate and you lose!',
       rules: [
@@ -474,8 +474,8 @@ const raf = requestAnimationFrame;
       venue: 'Hall 313',
       team: 'Solo/Duo',
       prize: '🎁 Gift Awaits',
-      staff: 'Mrs. J. Jayapradha',
-      students: 'Divya, Bhalaganapathy, Bharath',
+      staff: 'Dr.J.Vaishnavi',
+      students: 'N Kishore, A Kishore,Santhana Priyan and Mithun',
       contact: '96264 33235',
       desc: 'Document your CAPTCHA\'26 experience in a cinematic reel. Capture the energy, the battles, the friendships — and craft the most epic 30-second video of the symposium. The stage is yours.',
       rules: [
